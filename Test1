@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Front End Test</title>
+  <style>
+  p {
+    background: yellow;
+    margin: 6px 0;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+ <table> 
+	<caption>A complex table</caption> 
+	<tbody> 
+		<tr> 
+			<th>Avatar
+			<th>First name
+			<th>Last name
+			<th>Action
+		</tr>
+
+		<tr> 
+			<th><image>
+			<th>Jhon
+			<th>Applesed
+			<th>Last name
+			<th><button>Delete()</button>
+
+<script>
+	$( "button" ).click(function() {
+  	$( "p" ).remove();
+	});
+</script>
+		</tr>
+ </table>
+
+</body>
+</html>
+
