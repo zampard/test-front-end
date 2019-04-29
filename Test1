@@ -28,16 +28,16 @@
 
 <script>
 	$( document ).ready(function() {
-  		var api_url = '/api/users?page=<page>'
+  		var api_url = 'https://reqres.in//api/users?page=<page>'
   		});
-	$.get( "/api/users?page=<page", function( data ) {
+	$.get( "https://reqres.in//api/users?page=<page>", function( data ) {
  		 $( "body" )
    		 .append( "Avatar: " + data.avatar ) // ImageJhon
     		 .append( "Name: " + data.name ); //  John
 		 .append( "Last name: " + data.lastname ); //  Appleseed
 		}, "json" );
 	$.ajax({
-    		url: '/api/users/<id>',
+    		url: 'https://reqres.in//api/users/<id>',
   		method: 'DELETE',
     		contentType: 'application/json',
     		success: function(result) {
