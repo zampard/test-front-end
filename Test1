@@ -34,9 +34,9 @@
   		}
 	$.get( "https://reqres.in//api/users?page=<page>", function( data ) {
  		 $( "body" )
-   		 .append( "Avatar: " + data.avatar ) // ImageJhon
-    		 .append( "Name: " + data.name ); //  John
-		 .append( "Last name: " + data.lastname ); //  Appleseed
+   		 .append( "Avatar: " + data.avatar ) 
+    		 .append( "Name: " + data.name ); 
+		 .append( "Last name: " + data.lastname ); 
 		}, "json" );
 	$.ajax({
     		url: 'https://reqres.in//api/users/<id>',
