@@ -28,11 +28,17 @@
 			<th>Last name
 			<th><button>Delete()</button>
 
+
+		</tr>
+ </table>
+
 <script>
-	$.get( "/api/users?page=<page>", function( data ) {
- 		$( ".result" ).html( data );
-		alert( "Letti" );
-		});
+	$.get( "/api/users?page=<page", function( data ) {
+ 		 $( "body" )
+   		 .append( "Avatar: " + data.avatar ) // ImageJhon
+    		 .append( "Name: " + data.name ); //  John
+		 .append( "Last name: " + data.lastname ); //  Appleseed
+		}, "json" );
 	$.ajax({
     		url: '/api/users/<id>',
   		method: 'DELETE',
@@ -43,8 +49,6 @@
     		}
 });
 </script>
-		</tr>
- </table>
 
 </body>
 </html>
