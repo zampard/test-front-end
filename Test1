@@ -12,7 +12,7 @@
 </head>
 <body>
  <table> 
-	<caption>A complex table</caption> 
+	<caption>Test 1</caption> 
 	<tbody> 
 		<tr> 
 			<th>Avatar
@@ -29,9 +29,19 @@
 			<th><button>Delete()</button>
 
 <script>
-	$( "button" ).click(function() {
-  	$( "p" ).remove();
-	});
+	$.get( "/api/users?page=<page>", function( data ) {
+ 		$( ".result" ).html( data );
+		alert( "Letti" );
+		});
+	$.ajax({
+    		url: '/api/users/<id>',
+  		method: 'DELETE',
+    		contentType: 'application/json',
+    		success: function(result) {
+		},
+    		error: function(request,msg,error) {
+    		}
+});
 </script>
 		</tr>
  </table>
