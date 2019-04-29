@@ -27,6 +27,9 @@
  </table>
 
 <script>
+	$( document ).ready(function() {
+  		var api_url = '/api/users?page=<page>'
+  		});
 	$.get( "/api/users?page=<page", function( data ) {
  		 $( "body" )
    		 .append( "Avatar: " + data.avatar ) // ImageJhon
