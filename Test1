@@ -27,9 +27,11 @@
  </table>
 
 <script>
-	$( document ).ready(function() {
-  		var api_url = 'https://reqres.in//api/users?page=<page>'
-  		});
+	$.ajax({
+  		url: 'path/to/api',
+  		type: 'GET' 
+		}).done(function(data){
+  		}
 	$.get( "https://reqres.in//api/users?page=<page>", function( data ) {
  		 $( "body" )
    		 .append( "Avatar: " + data.avatar ) // ImageJhon
